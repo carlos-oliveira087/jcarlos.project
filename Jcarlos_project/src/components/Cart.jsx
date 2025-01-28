@@ -11,7 +11,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
     let message = '*Olá! Gostaria de saber mais informações sobre o seguintes itens:*\n\n';
     
     cartItems.forEach((item) => {
-      message += `${item.nome}\n ${item.id}\n\n Que vi no site de vocês.`;
+      message += `Nome: ${item.nome}\n Ref: ${item.id}\n\n Que vi no site de vocês.`;
     });
   
     return message;
