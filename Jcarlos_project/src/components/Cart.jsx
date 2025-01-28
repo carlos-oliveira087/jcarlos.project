@@ -86,7 +86,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
                 
               </div>
             ) : (
-              <div className="flex flex-col justify-center items-center text-center h-auto gap-12 mt-14">
+              <div className="flex flex-col justify-center items-center text-center h-auto gap-12 mt-[63px]">
                 <p className="text-[22px] font-bold whitespace-nowrap">Seu carrinho está vazio...</p>
                 <span className="text-[125px]"><MdOutlineRemoveShoppingCart/></span>
                 <button className="bg-orange-400 w-60 h-10 rounded-lg text-lg font-bold" onClick={handleToggleCart}>

@@ -7,19 +7,19 @@ function Location() {
 
   return (
 
-    <div>
+    <div className="flex justify-center items-center text-center bg-white pb-7 rounded-t-3xl">
 
-      <div className="bg-white pb-7 rounded-t-3xl">
+      <div>
         <div className="flex items-center justify-center text-secondary gap-3 mb-10">
           <h1 className="flex text-2xl font-roboto font-semibold mt-10">Onde estamos localizados</h1>
           <span className="text-3xl mt-10"><PiMapPinAreaFill /></span>
         </div>
 
-        <div className="mx-5">
-          <img className="rounded-t-2xl" src="./assets/loja_recife.jpg" alt="" />
+        <div className="mx-5 max-w-[900px]">
+          <img className="rounded-t-2xl" src="./assets/loja_recife.jpg"/>
         </div>
 
-        <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-12 mx-5 bg-secondary h-[340px] w-auto">
+        <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-12 mx-5 bg-secondary h-[340px] w-auto max-w-[900px]">
           <p className="text-white mb-4 font-roboto mx-4 text-2xl font-bold">Recife</p>
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Eng. Domingos Ferreira, 1183<br />Boa Viagem, 51011-051
@@ -33,11 +33,11 @@ function Location() {
           </a>
         </div>
 
-        <div className="mx-5">
+        <div className="mx-5 max-w-[900px]">
           <img className="rounded-t-2xl" src="./assets/loja_caruaru.jpg" alt="" />
         </div>
 
-        <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-16 mx-5 bg-secondary h-[340px] w-auto">
+        <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-16 mx-5 bg-secondary h-[340px] w-auto max-w-[900px]">
           <p className="text-white mb-4 font-roboto mx-4 text-2xl font-bold">Caruaru</p>
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Agamenon Magalhães, 1678<br />Maurício de Nassau, 55014-000
