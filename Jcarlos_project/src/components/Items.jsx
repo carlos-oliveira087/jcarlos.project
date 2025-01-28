@@ -169,7 +169,7 @@ function Items() {
                     onClick={() => addToCart(cadeira)}
                   >
                     <span className="text-white cursor-pointer">
-                      <FaPlus />
+                      {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                     </span>
                   </button>
                 </div>
@@ -213,7 +213,7 @@ function Items() {
                     onClick={() => addToCart(cadeira)}
                   >
                     <span className="text-white cursor-pointer">
-                      <FaPlus />
+                      {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                     </span>
                   </button>
                 </div>
