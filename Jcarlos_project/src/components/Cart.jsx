@@ -8,10 +8,10 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   const generateCartMessage = () => {
     if (cartItems.length === 0) return 'Meu carrinho está vazio';
   
-    let message = 'Olá, gostaria de pedir os seguintes itens:\n\n';
+    let message = '*Olá! Gostaria de saber mais informações sobre o seguintes itens:*\n\n';
     
     cartItems.forEach((item) => {
-      message += `Item: ${item.nome}\nQuantidade: 1\nPreço: R$ ${item.preco}\n\n`;
+      message += `${item.nome}\n ${item.id}\n\n Que vi no site de vocês.`;
     });
   
     return message;
