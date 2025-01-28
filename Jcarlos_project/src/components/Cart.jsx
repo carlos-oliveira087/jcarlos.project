@@ -8,10 +8,10 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   const generateCartMessage = () => {
     if (cartItems.length === 0) return 'Meu carrinho está vazio';
   
-    let message = '*Olá! Gostaria de saber mais informações sobre o seguintes itens:*\n\n';
+    let message = '*Olá! Gostaria de saber mais informações sobre os seguintes itens que vi no site de vocês: \n*';
     
     cartItems.forEach((item) => {
-      message += `Nome: ${item.nome}\n Ref: ${item.id}\n\n Que vi no site de vocês.`;
+      message += `Nome: ${item.nome}\n Ref: ${item.id}`;
     });
   
     return message;
@@ -19,7 +19,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   
   const handleOpenWhatsApp = () => {
     const message = generateCartMessage();
-    const encodedMessage = message;
+    const encodedMessage = encodeURIComponent(message);
     const phoneNumber = '5583998081114';
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
