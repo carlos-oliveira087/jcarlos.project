@@ -20,7 +20,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   const handleOpenWhatsApp = () => {
     const message = generateCartMessage();
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '5583998081114';
+    const phoneNumber = '5581994704858';
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
     window.open(url, '_blank');
