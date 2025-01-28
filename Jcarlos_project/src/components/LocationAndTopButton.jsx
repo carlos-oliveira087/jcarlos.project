@@ -4,7 +4,8 @@ import { FaAngleUp } from "react-icons/fa";
 
 function Location() {
 
-return (
+
+  return (
 
     <div>
 

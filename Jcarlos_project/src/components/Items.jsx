@@ -31,7 +31,6 @@ function Items() {
     setShowThird(false);
   };
 
-  
   const addToCart = (item) => {
     setCartItems((prevItems) => {
       const exists = prevItems.some((cartItem) => cartItem.id === item.id);
@@ -44,17 +43,14 @@ function Items() {
     return cartItems.some((cartItem) => cartItem.id === item.id);
   };
 
-  
   const handleToggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
   
-
   const handleRemoveItem = (index) => {
     setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
   };
   
-
   useEffect(() => {
     const fetchCadeiras = async () => {
       try {
@@ -85,6 +81,7 @@ function Items() {
     fetchCadeiras();
   }, []);
 
+  
   return (
     <div>
       <Cart isCartOpen={isCartOpen} cartCount={cartItems.length} cartItems={cartItems} handleRemoveItem={handleRemoveItem} handleToggleCart={handleToggleCart} />
