@@ -92,10 +92,10 @@ function Items() {
       <div className="flex flex-col justify-center items-center">
         {showFirst ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={firstClick}>
-            <img className="h-40 mx-auto rounded-3xl" src="/public/bg_1.png" />
+            <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_1.png" />
             <img
               className="h-60 absolute -top-24 right-24 transform -translate-x-1/2"
-              src="/public/cadeira_1.png"
+              src="./assets/cadeira_1.png"
             />
           </div>
         ) : (
@@ -136,10 +136,10 @@ function Items() {
 
         {showSecond ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={secondClick}>
-            <img className="h-40 mx-auto rounded-3xl" src="/public/bg_2.png" />
+            <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_2.png" />
             <img
               className="h-56 absolute -top-16 right-[125px] transform -translate-x-1/2"
-              src="/public/cadeira_2.png"
+              src="./assets/cadeira_2.png"
             />
           </div>
         ) : (
@@ -180,10 +180,10 @@ function Items() {
 
         {showThird ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={thirdClick}>
-            <img className="h-40 mx-auto rounded-3xl mb-16" src="/public/bg_3.png" />
+            <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_3.png" />
             <img
               className="h-56 absolute -top-20 right-[112px] transform -translate-x-1/2"
-              src="/public/cadeira_4.png"
+              src="./assets/cadeira_4.png"
             />
           </div>
         ) : (
