@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdKeyboardBackspace } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaCheck } from "react-icons/fa";
 import Cart from "./Cart";
 
 function Items() {
@@ -37,11 +37,16 @@ function Items() {
       const exists = prevItems.some((cartItem) => cartItem.id === item.id);
       if (exists) return prevItems;
       return [...prevItems, item];
-    });
-  };  
+    });  
+};
+
+  const isItemInCart = (item) => {
+    return cartItems.some((cartItem) => cartItem.id === item.id);
+  };
+
   
   const handleToggleCart = () => {
-    setIsCartOpen((prevState) => !prevState);
+    setIsCartOpen(!isCartOpen);
   };
   
 
@@ -120,7 +125,7 @@ function Items() {
                     onClick={() => addToCart(cadeira)}
                   >
                     <span className="text-white cursor-pointer">
-                      <FaPlus />
+                      {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                     </span>
                   </button>
                 </div>

@@ -27,7 +27,7 @@ return (
             Ir com Google Maps
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
+          <a href="tel:+5508133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
             Entrar em contato
           </a>
         </div>
@@ -41,11 +41,11 @@ return (
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Agamenon Magalhães, 1678<br />Maurício de Nassau, 55014-000
           </p>
-          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
+          <a href="https://maps.app.goo.gl/EfMoAD2Ys1CQtpQb6" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
             Ir com Google Maps
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
+          <a href="tel:+5508137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
             Entrar em contato
           </a>
         </div>

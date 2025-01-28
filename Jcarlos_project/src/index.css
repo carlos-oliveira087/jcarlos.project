@@ -2,6 +2,15 @@ body {
     background-color: #252753
 }
 
+.scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+display: none; /* Chrome, Safari e outros navegadores baseados em WebKit */
+}
+
 
 @tailwind base;
 @tailwind components;
