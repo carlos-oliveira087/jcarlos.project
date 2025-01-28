@@ -15,7 +15,7 @@ return (
         </div>
 
         <div className="mx-5">
-          <img className="rounded-t-2xl" src="../public/loja_recife.jpg" alt="" />
+          <img className="rounded-t-2xl" src="./assets/loja_recife.jpg" alt="" />
         </div>
 
         <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-12 mx-5 bg-secondary h-[340px] w-auto">
@@ -33,7 +33,7 @@ return (
         </div>
 
         <div className="mx-5">
-          <img className="rounded-t-2xl" src="../public/loja_caruaru.jpg" alt="" />
+          <img className="rounded-t-2xl" src="./assets/loja_caruaru.jpg" alt="" />
         </div>
 
         <div className="flex flex-col justify-center items-center text-center rounded-b-2xl mb-16 mx-5 bg-secondary h-[340px] w-auto">

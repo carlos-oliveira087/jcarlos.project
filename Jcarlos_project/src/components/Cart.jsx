@@ -65,7 +65,7 @@ return (
 
                   <div key={index} className="flex rounded-lg text-left items-center mt-5" >
 
-                    <img src={`/public/${item.imagem}`} alt={item.nome} className="h-[65px] w-12  object-cover rounded-md"/>
+                    <img src={`./assets/${item.imagem}`} alt={item.nome} className="h-[65px] w-12  object-cover rounded-md"/>
 
                     <div className="flex-col justify-center mx-4 mr-auto">
                       <p className="font-bold text-[13px] whitespace-nowrap">{item.nome}</p>

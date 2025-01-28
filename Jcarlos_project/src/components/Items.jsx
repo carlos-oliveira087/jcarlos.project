@@ -116,7 +116,7 @@ function Items() {
               {estoque1.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img
-                    src={`/public/${cadeira.imagem}`}
+                    src={`./assets/${cadeira.imagem}`}
                     alt={cadeira.nome}
                     className="h-52 object-cover rounded-lg"
                   />
@@ -160,7 +160,7 @@ function Items() {
               {estoque2.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img
-                    src={`/public/${cadeira.imagem}`}
+                    src={`./assets/${cadeira.imagem}`}
                     alt={cadeira.nome}
                     className="h-52 object-cover rounded-lg"
                   />
@@ -204,7 +204,7 @@ function Items() {
               {estoque3.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img
-                    src={`/public/${cadeira.imagem}`}
+                    src={`./assets/${cadeira.imagem}`}
                     alt={cadeira.nome}
                     className="h-52 object-cover rounded-lg"
                   />
