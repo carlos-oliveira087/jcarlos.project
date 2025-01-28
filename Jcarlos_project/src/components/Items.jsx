@@ -58,9 +58,9 @@ function Items() {
   useEffect(() => {
     const fetchCadeiras = async () => {
       try {
-        const responseEstoque1 = await fetch("/estoque1.json");
-        const responseEstoque2 = await fetch("/estoque2.json");
-        const responseEstoque3 = await fetch("/estoque3.json");
+        const responseEstoque1 = await fetch("./assets/estoque1.json");
+        const responseEstoque2 = await fetch("./assets/estoque2.json");
+        const responseEstoque3 = await fetch("./assets/estoque3.json");
 
         if (
           !responseEstoque1.ok ||
