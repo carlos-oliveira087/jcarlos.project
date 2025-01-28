@@ -10,23 +10,20 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   
     let message = 'Olá, gostaria de pedir os seguintes itens:\n\n';
     
-    // Adicionando detalhes dos itens ao texto da mensagem
     cartItems.forEach((item) => {
       message += `Item: ${item.nome}\nQuantidade: 1\nPreço: R$ ${item.preco}\n\n`;
     });
   
-    return message; // Retornando a mensagem sem codificação aqui
+    return message;
   };
   
-  // Função que redireciona para o WhatsApp com a mensagem
   const handleOpenWhatsApp = () => {
-    const message = generateCartMessage(); // Gera a mensagem
-    const encodedMessage = message; // Codifica a mensagem para a URL
-    const phoneNumber = '5583998081114'; // Número da loja
-    const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`; // Corrige a URL para usar a variável corretamente
+    const message = generateCartMessage();
+    const encodedMessage = message;
+    const phoneNumber = '5583998081114';
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
-    // Abrir o WhatsApp
-    window.open(url, '_blank'); // Abre a URL no WhatsApp
+    window.open(url, '_blank');
   };
   
   

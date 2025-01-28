@@ -27,7 +27,7 @@ return (
             Ir com Google Maps
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+5508133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
+          <a href="tel:+558133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
             Entrar em contato
           </a>
         </div>
@@ -45,7 +45,7 @@ return (
             Ir com Google Maps
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+5508137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
+          <a href="tel:+558137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
             Entrar em contato
           </a>
         </div>
