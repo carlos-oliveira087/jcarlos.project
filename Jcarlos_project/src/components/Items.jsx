@@ -180,7 +180,7 @@ function Items() {
             <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_3.png" />
             <img
               className="h-56 absolute -top-20 right-[112px] transform -translate-x-1/2"
-              src="./assets/cadeira_4.png"
+              src="./assets/cadeira_3.png"
             />
           </div>
         ) : (
