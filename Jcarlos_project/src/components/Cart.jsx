@@ -1,6 +1,6 @@
 import { HiShoppingCart } from "react-icons/hi";
 import { FaCircle, FaTrash } from "react-icons/fa";
-import { MdOutlineRemoveShoppingCart } from "react-icons/md";
+import { MdOutlineRemoveShoppingCart, MdKeyboardBackspace } from "react-icons/md";
 
 /* eslint-disable react/prop-types */
 function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggleCart }) {
@@ -50,6 +50,9 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
               <div className="flex flex-col items-center rounded-lg text-left pb-[108px]">
                 
                 <div className="fixed top-[33px] flex items-center justify-center text-center h-16 w-[299px] rounded-lg rounded-b-none bg-secondary border-b-[1px] border-orange-400">
+                  <button className="fixed flex justify-center items-center mr-56 bg-orange-400 w-7 h-5 rounded-xl text-[20px]" onClick={handleToggleCart}>
+                  <MdKeyboardBackspace />
+                  </button>
                   <p className="text-[22px] font-bold">Meu carrinho</p>
                 </div>
                 
