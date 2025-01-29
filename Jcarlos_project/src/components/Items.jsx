@@ -7,9 +7,13 @@ function Items() {
   const [showFirst, setShowFirst] = useState(true);
   const [showSecond, setShowSecond] = useState(true);
   const [showThird, setShowThird] = useState(true);
+  const [showForth, setShowForth] = useState(true);
+  const [showFifth, setShowFifth] = useState(true);
   const [estoque1, setEstoque1] = useState([]);
   const [estoque2, setEstoque2] = useState([]);
   const [estoque3, setEstoque3] = useState([]);
+  const [estoque4, setEstoque4] = useState([]);
+  const [estoque5, setEstoque5] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -17,18 +21,40 @@ function Items() {
     setShowFirst(false);
     setShowSecond(true);
     setShowThird(true);
+    setShowForth(true);
+    setShowFifth(true);
   };
 
   const secondClick = () => {
     setShowFirst(true);
     setShowSecond(false);
     setShowThird(true);
+    setShowForth(true);
+    setShowFifth(true);
   };
 
   const thirdClick = () => {
     setShowFirst(true);
     setShowSecond(true);
     setShowThird(false);
+    setShowForth(true);
+    setShowFifth(true);
+  };
+
+  const forthClick = () => {
+    setShowFirst(true);
+    setShowSecond(true);
+    setShowThird(true);
+    setShowForth(false);
+    setShowFifth(true);
+  };
+
+  const fifthClick = () => {
+    setShowFirst(true);
+    setShowSecond(true);
+    setShowThird(true);
+    setShowForth(true);
+    setShowFifth(false);
   };
 
   const addToCart = (item) => {
@@ -57,11 +83,15 @@ function Items() {
         const responseEstoque1 = await fetch("./assets/estoque1.json");
         const responseEstoque2 = await fetch("./assets/estoque2.json");
         const responseEstoque3 = await fetch("./assets/estoque3.json");
+        const responseEstoque4 = await fetch("./assets/estoque4.json");
+        const responseEstoque5 = await fetch("./assets/estoque5.json");
 
         if (
           !responseEstoque1.ok ||
           !responseEstoque2.ok ||
-          !responseEstoque3.ok
+          !responseEstoque3.ok ||
+          !responseEstoque4.ok ||
+          !responseEstoque5.ok
         ) {
           throw new Error("Erro ao carregar os arquivos JSON");
         }
@@ -69,10 +99,14 @@ function Items() {
         const estoque1 = await responseEstoque1.json();
         const estoque2 = await responseEstoque2.json();
         const estoque3 = await responseEstoque3.json();
+        const estoque4 = await responseEstoque4.json();
+        const estoque5 = await responseEstoque5.json();
 
         setEstoque1(estoque1);
         setEstoque2(estoque2);
         setEstoque3(estoque3);
+        setEstoque4(estoque4);
+        setEstoque5(estoque5);
       } catch (error) {
         console.error("Erro ao carregar os JSON:", error);
       }
@@ -177,7 +211,7 @@ function Items() {
 
         {showThird ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={thirdClick}>
-            <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_3.png" />
+            <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_3.png" />
             <img
               className="h-56 absolute -top-20 right-[112px] transform -translate-x-1/2"
               src="./assets/cadeira_3.png"
@@ -199,6 +233,94 @@ function Items() {
 
             <div className="mt-6 grid grid-cols-2 gap-5 p-5 pb-10">
               {estoque3.map((cadeira) => (
+                <div key={cadeira.id} className="flex flex-col items-center">
+                  <img
+                    src={`./assets/${cadeira.imagem}`}
+                    alt={cadeira.nome}
+                    className="h-52 object-cover rounded-lg"
+                  />
+                  <button
+                    className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                    onClick={() => addToCart(cadeira)}
+                  >
+                    <span className="text-white cursor-pointer">
+                      {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
+                    </span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {showForth ? (
+          <div className="relative mt-16 mx-3 cursor-pointer" onClick={forthClick}>
+            <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_4.png" />
+            <img
+              className="h-56 absolute -top-[72px] right-28 transform -translate-x-1/2"
+              src="./assets/cadeira_4.png"
+            />
+          </div>
+        ) : (
+          <div className="relative mt-14 w-screen h-auto bg-white pt-7">
+            <div className="flex items-center justify-center">
+              <span
+                className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                onClick={() => setShowForth(true)}
+              >
+                <MdKeyboardBackspace />
+              </span>
+              <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                Cadeiras Fixas
+              </span>
+            </div>
+
+            <div className="mt-6 grid grid-cols-2 gap-5 p-5 pb-10">
+              {estoque4.map((cadeira) => (
+                <div key={cadeira.id} className="flex flex-col items-center">
+                  <img
+                    src={`./assets/${cadeira.imagem}`}
+                    alt={cadeira.nome}
+                    className="h-52 object-cover rounded-lg"
+                  />
+                  <button
+                    className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                    onClick={() => addToCart(cadeira)}
+                  >
+                    <span className="text-white cursor-pointer">
+                      {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
+                    </span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {showFifth ? (
+          <div className="relative mt-16 mx-3 cursor-pointer" onClick={fifthClick}>
+            <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_5.png" />
+            <img
+              className="h-60 absolute -top-12 right-[87px] transform -translate-x-1/2"
+              src="./assets/cadeira_5.png"
+            />
+          </div>
+        ) : (
+          <div className="relative mt-14 w-screen h-auto bg-white pt-7">
+            <div className="flex items-center justify-center">
+              <span
+                className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                onClick={() => setShowFifth(true)}
+              >
+                <MdKeyboardBackspace />
+              </span>
+              <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                Longarinas
+              </span>
+            </div>
+
+            <div className="mt-6 grid grid-cols-2 gap-5 p-5 pb-10">
+              {estoque5.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img
                     src={`./assets/${cadeira.imagem}`}

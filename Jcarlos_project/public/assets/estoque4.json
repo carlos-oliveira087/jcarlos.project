@@ -1,0 +1,32 @@
+[
+    {
+      "id": 18001,
+      "nome": "Cadeira Slim",
+      "imagem": "18001.jpg"
+    },
+    {
+      "id": 27001,
+      "nome": "Cadeira Air",
+      "imagem": "27001.jpg"
+    },
+    {
+      "id": 43103,
+      "nome": "Cadeira Flip",
+      "imagem": "43103.png"
+    },
+    {
+      "id": 17101,
+      "nome": "Cadeira Moov",
+      "imagem": "17101.png"
+    },
+    {
+      "id": 40101,
+        "nome": "Cadeira Idea",
+        "imagem": "40101.png"
+    },
+    {
+      "id": 3001,
+      "nome": "Cadeira StarPlus",
+      "imagem": "3001.png"
+    }
+]
