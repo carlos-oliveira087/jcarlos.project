@@ -218,7 +218,7 @@ function Items() {
             />
           </div>
         ) : (
-          <div className="relative mt-14 w-screen h-auto bg-white pt-7 mb-16">
+          <div className="relative mt-14 w-screen h-auto bg-white pt-7">
             <div className="flex items-center justify-center">
               <span
                 className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
@@ -257,7 +257,7 @@ function Items() {
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={forthClick}>
             <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_4.png" />
             <img
-              className="h-56 absolute -top-[72px] right-28 transform -translate-x-1/2"
+              className="h-60 absolute -top-[87px] right-[102px] transform -translate-x-1/2"
               src="./assets/cadeira_4.png"
             />
           </div>
@@ -275,7 +275,7 @@ function Items() {
               </span>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-5 p-5 pb-10">
+            <div className="grid grid-cols-2 gap-5 px-5 pb-10">
               {estoque4.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img
@@ -306,7 +306,7 @@ function Items() {
             />
           </div>
         ) : (
-          <div className="relative mt-14 w-screen h-auto bg-white pt-7">
+          <div className="relative mt-14 w-screen h-auto bg-white pt-7 mb-16">
             <div className="flex items-center justify-center">
               <span
                 className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
@@ -319,7 +319,7 @@ function Items() {
               </span>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-5 p-5 pb-10">
+            <div className="grid grid-cols-2 gap-5 px-5 pb-10">
               {estoque5.map((cadeira) => (
                 <div key={cadeira.id} className="flex flex-col items-center">
                   <img

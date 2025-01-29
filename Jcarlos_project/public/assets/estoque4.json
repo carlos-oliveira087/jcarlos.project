@@ -1,32 +1,52 @@
 [
-    {
-      "id": 18001,
-      "nome": "Cadeira Slim",
-      "imagem": "18001.jpg"
-    },
-    {
-      "id": 27001,
-      "nome": "Cadeira Air",
-      "imagem": "27001.jpg"
-    },
-    {
-      "id": 43103,
-      "nome": "Cadeira Flip",
-      "imagem": "43103.png"
-    },
-    {
-      "id": 17101,
-      "nome": "Cadeira Moov",
-      "imagem": "17101.png"
-    },
-    {
-      "id": 40101,
-        "nome": "Cadeira Idea",
-        "imagem": "40101.png"
-    },
-    {
-      "id": 3001,
-      "nome": "Cadeira StarPlus",
-      "imagem": "3001.png"
-    }
+	{
+		"id": 16006,
+		"nome": "Cadeira NewNet",
+		"imagem": "16006.jpg"
+	},
+	{
+		"id": 16506,
+		"nome": "Cadeira NewNet",
+		"imagem": "16506.jpg"
+	},
+	{
+		"id": 4008,
+		"nome": "Cadeira Start",
+		"imagem": "4008.png"
+	},
+	{
+		"id": 4107,
+		"nome": "Cadeira Start",
+		"imagem": "4107.png"
+	},
+	{
+		"id": 18006,
+		"nome": "Cadeira Slim",
+		"imagem": "18006.png"
+	},
+	{
+		"id": 18007,
+		"nome": "Cadeira Slim",
+		"imagem": "18007.jpg"
+	},
+	{
+		"id": 27006,
+		"nome": "Cadeira Air",
+		"imagem": "27006.jpg"
+	},
+	{
+		"id": 34006,
+		"nome": "Cadeira Go",
+		"imagem": "34006.png"
+	},
+	{
+		"id": 38006,
+		"nome": "Cadeira Pro",
+		"imagem": "38006.png"
+	},
+	{
+		"id": 38007,
+		"nome": "Cadeira Pro",
+		"imagem": "38007.png"
+	}
 ]
