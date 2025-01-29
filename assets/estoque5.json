@@ -1,0 +1,52 @@
+[
+	{
+		"id": 16010,
+		"nome": "Cadeira NewNet",
+		"imagem": "16010.jpg"
+	},
+	{
+		"id": 36710,
+		"nome": "Cadeira Bee",
+		"imagem": "36710.jpg"
+	},
+	{
+		"id": 38010,
+		"nome": "Cadeira Pro",
+		"imagem": "38010.png"
+	},
+	{
+		"id": 43110,
+		"nome": "Cadeira Flip",
+		"imagem": "43110.png"
+	},
+	{
+		"id": 4110,
+		"nome": "Cadeira Start",
+		"imagem": "4110.png"
+	},
+	{
+		"id": 4009,
+		"nome": "Cadeira Start",
+		"imagem": "4009.png"
+	},
+	{
+		"id": 33110,
+		"nome": "Cadeira Stay",
+		"imagem": "33110.png"
+	},
+	{
+		"id": 36075,
+		"nome": "Cadeira Duo",
+		"imagem": "36075.png"
+	},
+	{
+		"id": 18010,
+		"nome": "Cadeira Slim",
+		"imagem": "18010.jpg"
+	},
+	{
+		"id": 34010,
+		"nome": "Cadeira Go",
+		"imagem": "34010.png"
+	}
+]
