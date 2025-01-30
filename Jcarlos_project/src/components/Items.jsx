@@ -25,6 +25,7 @@ function Items() {
     setShowThird(true);
     setShowForth(true);
     setShowFifth(true);
+    setShowSixth(true);
   };
 
   const secondClick = () => {
