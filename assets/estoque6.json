@@ -1,0 +1,52 @@
+[
+	{
+		"id": 12011,
+		"nome": "Cadeira Coletiva",
+		"imagem": "12011.jpg"
+	},
+	{
+		"id": 12018,
+		"nome": "Cadeira Coletiva",
+		"imagem": "12018.jpg"
+	},
+	{
+		"id": 12020,
+		"nome": "Cadeira Coletiva",
+		"imagem": "12020.jpg"
+	},
+	{
+		"id": 12030,
+		"nome": "Cadeira Coletiva",
+		"imagem": "12030.jpg"
+	},
+	{
+		"id": 35008,
+		"nome": "Cadeira Viva - Prancheta",
+		"imagem": "35008.jpg"
+	},
+	{
+		"id": 340060,
+		"nome": "Cadeira Go - Prancheta",
+		"imagem": "34006p.png"
+	},
+	{
+		"id": 14015,
+		"nome": "Cadeira Fun",
+		"imagem": "14015.jpg"
+	},
+	{
+		"id": 36565,
+		"nome": "Cavaletti Talk",
+		"imagem": "36565.jpg"
+	},
+	{
+		"id": 41008,
+		"nome": "Cavaletti Joy",
+		"imagem": "41008.png"
+	},
+	{
+		"id": 41020,
+		"nome": "Cadeira Joy",
+		"imagem": "41020.jpg"
+	}
+]
