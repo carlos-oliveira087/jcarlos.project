@@ -76,6 +76,7 @@ function Items() {
   const addToCart = (item) => {
     setCartItems((prevItems) => {
       const exists = prevItems.some((cartItem) => cartItem.id === item.id);
+      setIsCartOpen(true)
       if (exists) return prevItems;
       return [...prevItems, item];
     });  
@@ -140,7 +141,7 @@ function Items() {
     <div>
       <Cart isCartOpen={isCartOpen} cartCount={cartItems.length} cartItems={cartItems} handleRemoveItem={handleRemoveItem} handleToggleCart={handleToggleCart} />
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-32">
         {showFirst ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={firstClick}>
             <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_1.png" />
@@ -277,7 +278,7 @@ function Items() {
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={forthClick}>
             <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_4.png" />
             <img
-              className="h-60 absolute -top-[87px] right-[102px] transform -translate-x-1/2"
+              className="h-60 absolute -top-[80px] right-[102px] transform -translate-x-1/2"
               src="./assets/cadeira_4.png"
             />
           </div>
@@ -365,7 +366,7 @@ function Items() {
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={sixthClick}>
             <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_6.png" />
             <img
-              className="h-[268px] absolute -top-[106px] right-[65px] transform -translate-x-1/2"
+              className="h-[268px] absolute -top-[100px] right-[65px] transform -translate-x-1/2"
               src="./assets/cadeira_6.png"
             />
           </div>
