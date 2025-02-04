@@ -5,6 +5,11 @@ import { MdOutlineRemoveShoppingCart, MdKeyboardBackspace } from "react-icons/md
 /* eslint-disable react/prop-types */
 function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggleCart }) {
 
+  const getSellerNumber = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('seller') || '5581994704858';
+  };
+
   const generateCartMessage = () => {
     if (cartItems.length === 0) return 'Meu carrinho está vazio';
   
@@ -20,7 +25,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   const handleOpenWhatsApp = () => {
     const message = generateCartMessage();
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '5581994704858';
+    const phoneNumber = getSellerNumber();
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
     window.open(url, '_blank');
@@ -30,7 +35,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
   return (
     
     <div>
-      <div className="absolute top-[68px] right-10 transform -translate-y-1/2">
+      <div className="fixed top-[68px] right-10 transform -translate-y-1/2 z-50">
         <HiShoppingCart
           className="text-secondary text-4xl cursor-pointer"
           onClick={handleToggleCart}
@@ -38,7 +43,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
       </div>
    
       {cartCount > 0 && (
-        <div className="absolute top-11 right-9 transform -translate-y-1/2">
+        <div className="absolute top-11 right-9 transform -translate-y-1/2 z-50">
           <FaCircle className="text-orange-400 text-xs cursor-pointer" />
         </div>
       )}
