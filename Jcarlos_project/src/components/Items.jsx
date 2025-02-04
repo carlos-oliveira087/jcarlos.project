@@ -76,8 +76,13 @@ function Items() {
   const addToCart = (item) => {
     setCartItems((prevItems) => {
       const exists = prevItems.some((cartItem) => cartItem.id === item.id);
-      setIsCartOpen(true)
+
+      if (prevItems.length === 0) {
+        (setIsCartOpen(true))
+      }
+
       if (exists) return prevItems;
+      
       return [...prevItems, item];
     });  
 };

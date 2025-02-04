@@ -43,7 +43,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
       </div>
    
       {cartCount > 0 && (
-        <div className="absolute top-11 right-9 transform -translate-y-1/2 z-50">
+        <div className="fixed top-11 right-9 transform -translate-y-1/2 z-50">
           <FaCircle className="text-orange-400 text-xs cursor-pointer" />
         </div>
       )}
