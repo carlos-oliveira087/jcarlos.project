@@ -25,8 +25,18 @@
         "imagem": "47301.jpg"
     },
     {
+      "id": 43503,
+      "nome": "Cadeira Flip",
+      "imagem": "43503.png"
+    },
+    {
       "id": 18004,
       "nome": "Cadeira Slim",
       "imagem": "18004.png"
+    },
+    {
+      "id": 16003,
+      "nome": "Cadeira NewNet",
+      "imagem": "16003.jpg"
     }
 ]
