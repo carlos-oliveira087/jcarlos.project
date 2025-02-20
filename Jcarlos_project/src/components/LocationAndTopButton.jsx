@@ -7,7 +7,7 @@ function Location() {
 
   return (
 
-    <div className="flex justify-center items-center text-center bg-white pb-7 rounded-t-3xl">
+    <div className="flex justify-center items-center text-center bg-white rounded-t-3xl">
 
       <div>
         <div className="flex items-center justify-center text-secondary gap-3 mb-10">
@@ -52,9 +52,12 @@ function Location() {
         </div>
 
         <div>
-          <div className="flex flex-col text-secondary items-center text-center justify-center mb-10 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div className="flex flex-col text-secondary items-center text-center justify-center mb-16 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <span className="text-2xl"><FaAngleUp /></span>
             <span className="text-lg font-semibold font-roboto">Voltar ao topo</span>
+          </div>
+          <div className="flex justify-center items-center bg-secondary text-white mx-[55px] h-[37px] rounded-t-xl">
+            <span className="text-sm font-normal font-roboto">Created by Carlos Oliveira</span>
           </div>
 
         </div>
