@@ -24,11 +24,11 @@ function Location() {
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Eng. Domingos Ferreira, 1183<br />Boa Viagem, 51011-051
           </p>
-          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl h-10 w-44">
+          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl h-10 w-44 sm:w-72 sm:text-[17px]">
             Como chegar
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+558133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+          <a href="tel:+558133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44 sm:w-72 sm:text-[17px]">
             (081) 3327-4262
           </a>
         </div>
@@ -42,11 +42,11 @@ function Location() {
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Agamenon Magalhães, 1678<br />Maurício de Nassau, 55014-000
           </p>
-          <a href="https://maps.app.goo.gl/EfMoAD2Ys1CQtpQb6" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+          <a href="https://maps.app.goo.gl/EfMoAD2Ys1CQtpQb6" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44 sm:w-72 sm:text-[17px]">
             Como chegar
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+558137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+          <a href="tel:+558137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44 sm:w-72 sm:text-[17px]">
             (081) 3721-2117
           </a>
         </div>
