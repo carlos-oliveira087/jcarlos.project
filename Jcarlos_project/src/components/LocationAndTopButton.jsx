@@ -24,12 +24,12 @@ function Location() {
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Eng. Domingos Ferreira, 1183<br />Boa Viagem, 51011-051
           </p>
-          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl h-10">
-            Ir com Google Maps
+          <a href="https://maps.app.goo.gl/jzyCbyggAsw7pd6M7" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl h-10 w-44">
+            Como chegar
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+558133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
-            Entrar em contato
+          <a href="tel:+558133274262" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+            (081) 3327-4262
           </a>
         </div>
 
@@ -42,12 +42,12 @@ function Location() {
           <p className="text-white mb-6 font-roboto mx-4 text-base">
             Av. Agamenon Magalhães, 1678<br />Maurício de Nassau, 55014-000
           </p>
-          <a href="https://maps.app.goo.gl/EfMoAD2Ys1CQtpQb6" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
-            Ir com Google Maps
+          <a href="https://maps.app.goo.gl/EfMoAD2Ys1CQtpQb6" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+            Como chegar
           </a>
           <span className="text-white font-roboto italic m-3">Ou</span>
-          <a href="tel:+558137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl">
-            Entrar em contato
+          <a href="tel:+558137212117" className="bg-white text-secondary font-bold py-2 px-4 rounded-xl w-44">
+            (081) 3721-2117
           </a>
         </div>
 
@@ -56,8 +56,10 @@ function Location() {
             <span className="text-2xl"><FaAngleUp /></span>
             <span className="text-lg font-semibold font-roboto">Voltar ao topo</span>
           </div>
-          <div className="flex justify-center items-center bg-secondary text-white mx-[55px] h-[37px] rounded-t-xl">
-            <span className="text-sm font-normal font-roboto">Created by Carlos Oliveira</span>
+
+          <div className="flex-col flex justify-center items-center bg-secondary text-white mx-[25px] h-[77px] rounded-t-xl gap-2">
+            <p className="text-[12px] font-normal font-roboto md:text-[15px]">&copy; 2024 J.Carlos Móveis - Todos os direitos reservados.</p>
+            <p className="text-[12px] font-normal font-roboto md:text-[13px]">Criado por <a className="font-bold" href="https://www.linkedin.com/in/carlos-oliveira-98aa64288/">Carlos Oliveira</a></p>
           </div>
 
         </div>
