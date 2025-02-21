@@ -165,12 +165,12 @@ function Items() {
               <div className="relative mt-14 w-screen h-auto bg-white pt-7 md:pb-10">
                 <div className="flex items-center justify-center">
                   <span
-                    className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                    className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                     onClick={() => setShowFirst(true)}
                   >
                     <MdKeyboardBackspace />
                   </span>
-                  <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                  <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                     Mais Vendidos
                   </span>
                 </div>
@@ -214,12 +214,12 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                   onClick={() => setShowSecond(true)}
                 >
                   <MdKeyboardBackspace />
                 </span>
-                <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                   Linha Presidente
                 </span>
               </div>
@@ -263,12 +263,12 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                   onClick={() => setShowThird(true)}
                 >
                   <MdKeyboardBackspace />
                 </span>
-                <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                   Linha Executiva
                 </span>
               </div>
@@ -312,12 +312,12 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                   onClick={() => setShowForth(true)}
                 >
                   <MdKeyboardBackspace />
                 </span>
-                <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                   Cadeiras Fixas
                 </span>
               </div>
@@ -361,12 +361,12 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                   onClick={() => setShowFifth(true)}
                 >
                   <MdKeyboardBackspace />
                 </span>
-                <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                   Longarinas
                 </span>
               </div>
@@ -410,12 +410,12 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 mb-16 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary"
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
                   onClick={() => setShowSixth(true)}
                 >
                   <MdKeyboardBackspace />
                 </span>
-                <span className="mx-auto font-roboto font-bold text-secondary text-2xl">
+                <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
                   Outros
                 </span>
               </div>

@@ -11,8 +11,8 @@ module.exports = {
         secondary: '#252753' 
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-        sofia: ['Sofia Sans', 'sans-serif'],
+        arimo: ['arimo', 'sans-serif'],
+        sofia: ['Sofia Sans', 'sans-serif']
       }
     },
   },

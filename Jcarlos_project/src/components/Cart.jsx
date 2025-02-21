@@ -49,7 +49,7 @@ function Cart({ cartCount, cartItems, handleRemoveItem, isCartOpen, handleToggle
       )}
 
       {isCartOpen &&
-        <div className="fixed z-50 top-8 right-0 w-[301px] h-[435px] bg-secondary border-orange-400 border-2 border-r-0 rounded-lg rounded-r-none shadow-lg font-roboto text-white  overflow-y-scroll scrollbar-hide transition-all duration-300 px-10">
+        <div className="fixed z-50 top-8 right-0 w-[301px] h-[435px] bg-secondary border-orange-400 border-2 border-r-0 rounded-lg rounded-r-none shadow-lg font-arimo text-white  overflow-y-scroll scrollbar-hide transition-all duration-300 px-10">
           
             {cartCount >= 1 ? (
               <div className="flex flex-col items-center rounded-lg text-left pb-[108px]">
