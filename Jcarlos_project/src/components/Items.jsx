@@ -147,7 +147,7 @@ function Items() {
     <div>
       <Cart isCartOpen={isCartOpen} cartCount={cartItems.length} cartItems={cartItems} handleRemoveItem={handleRemoveItem} handleToggleCart={handleToggleCart} />
 
-      <div className="flex flex-wrap justify-center items-center mt-32 md:mt-36 md:gap-3">
+      <div className="flex flex-wrap overflow-hidden justify-center items-center mt-32 md:mt-36 md:gap-3">
         
           <section id="firstSection">
             {showFirst ? (
@@ -184,10 +184,10 @@ function Items() {
                         className="h-52 object-cover rounded-lg md:h-72"
                       />
                       <button
-                        className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                        className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                         onClick={() => addToCart(cadeira)}
                       >
-                        <span className="text-white cursor-pointer">
+                        <span className="text-white cursor-pointer md:text-[18px]">
                           {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                         </span>
                       </button>
@@ -233,10 +233,10 @@ function Items() {
                       className="h-52 object-cover rounded-lg md:h-72"
                     />
                     <button
-                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                       onClick={() => addToCart(cadeira)}
                     >
-                      <span className="text-white cursor-pointer">
+                      <span className="text-white cursor-pointer md:text-[18px]">
                         {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                       </span>
                     </button>
@@ -282,10 +282,10 @@ function Items() {
                       className="h-52 object-cover rounded-lg md:h-72"
                     />
                     <button
-                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                       onClick={() => addToCart(cadeira)}
                     >
-                      <span className="text-white cursor-pointer">
+                      <span className="text-white cursor-pointer md:text-[18px]">
                         {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                       </span>
                     </button>
@@ -331,10 +331,10 @@ function Items() {
                       className="h-52 object-cover rounded-lg md:h-72"
                     />
                     <button
-                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                       onClick={() => addToCart(cadeira)}
                     >
-                      <span className="text-white cursor-pointer">
+                      <span className="text-white cursor-pointer md:text-[18px]">
                         {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                       </span>
                     </button>
@@ -380,10 +380,10 @@ function Items() {
                       className="h-52 object-cover rounded-lg md:h-72"
                     />
                     <button
-                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                       onClick={() => addToCart(cadeira)}
                     >
-                      <span className="text-white cursor-pointer">
+                      <span className="text-white cursor-pointer md:text-[18px]">
                         {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                       </span>
                     </button>
@@ -429,10 +429,10 @@ function Items() {
                       className="h-52 object-cover rounded-lg md:h-72"
                       />
                     <button
-                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center"
+                      className="flex mt-3 bg-secondary w-20 h-7 rounded-lg justify-center items-center md:w-[90px] md:h-7"
                       onClick={() => addToCart(cadeira)}
                     >
-                      <span className="text-white cursor-pointer">
+                      <span className="text-white cursor-pointer md:text-[18px]">
                         {isItemInCart(cadeira) ? <FaCheck /> : <FaPlus />}
                       </span>
                     </button>
