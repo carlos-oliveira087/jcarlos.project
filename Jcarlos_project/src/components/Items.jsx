@@ -146,7 +146,7 @@ function Items() {
     <div>
       <Cart isCartOpen={isCartOpen} cartCount={cartItems.length} cartItems={cartItems} handleRemoveItem={handleRemoveItem} handleToggleCart={handleToggleCart} />
 
-      <div className="flex flex-col justify-center items-center mt-32">
+      <div className="flex flex-wrap justify-center items-center mt-32 md:mt-36 md:gap-3">
         {showFirst ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={firstClick}>
             <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_1.png" />
@@ -369,7 +369,7 @@ function Items() {
 
         {showSixth ? (
           <div className="relative mt-16 mx-3 cursor-pointer" onClick={sixthClick}>
-            <img className="h-40 mx-auto rounded-3xl mb-16" src="./assets/bg_6.png" />
+            <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_6.png" />
             <img
               className="h-[268px] absolute -top-[100px] right-[65px] transform -translate-x-1/2"
               src="./assets/cadeira_6.png"

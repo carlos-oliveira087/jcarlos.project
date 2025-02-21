@@ -7,7 +7,7 @@ function Location() {
 
   return (
 
-    <div className="flex justify-center items-center text-center bg-white rounded-t-3xl">
+    <div className="flex justify-center items-center text-center bg-white rounded-t-3xl mt-16">
 
       <div>
         <div className="flex items-center justify-center text-secondary gap-3 mb-10">
@@ -59,7 +59,7 @@ function Location() {
 
           <div className="flex-col flex justify-center items-center bg-secondary text-white mx-[25px] h-[77px] rounded-t-xl gap-2">
             <p className="text-[12px] font-normal font-roboto md:text-[15px]">&copy; 2024 J.Carlos Móveis - Todos os direitos reservados.</p>
-            <p className="text-[12px] font-normal font-roboto md:text-[13px]">Criado por <a className="font-bold" href="https://www.linkedin.com/in/carlos-oliveira-98aa64288/">Carlos Oliveira</a></p>
+            <p className="text-[12px] font-normal font-roboto md:text-[13px]">Criado por <a className="font-bold" target="_blank" href="https://www.linkedin.com/in/carlos-oliveira-98aa64288/">Carlos Oliveira</a></p>
           </div>
 
         </div>
