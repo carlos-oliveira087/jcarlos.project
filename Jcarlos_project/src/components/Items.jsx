@@ -153,7 +153,13 @@ function Items() {
             {showFirst ? (
               <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
                 firstClick();
-                document.getElementById("firstSection").scrollIntoView({ behavior: "smooth" });
+                const section = document.getElementById("firstSection");
+                if (section) {
+                  const offset = -1000;
+                  const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                  window.scrollTo({ top: sectionPosition + offset });
+
+                };
               }}>
                 <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_1.png" />
                 <img
@@ -202,7 +208,13 @@ function Items() {
           {showSecond ? (
             <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
               secondClick();
-              document.getElementById("secondSection").scrollIntoView({ behavior: "smooth" });
+              const section = document.getElementById("secondSection");
+              if (section) {
+                const offset = -100;
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: sectionPosition + offset });
+
+              };
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_2.png" />
               <img
@@ -251,7 +263,13 @@ function Items() {
           {showThird ? (
             <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
               thirdClick();
-              document.getElementById("thirdSection").scrollIntoView({ behavior: "smooth" });
+              const section = document.getElementById("thirdSection");
+              if (section) {
+                const offset = 100;
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: sectionPosition + offset });
+
+              };
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_3.png" />
               <img
@@ -300,7 +318,13 @@ function Items() {
           {showForth ? (
             <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
               forthClick();
-              document.getElementById("forthSection").scrollIntoView({ behavior: "smooth" });
+              const section = document.getElementById("forthSection");
+              if (section) {
+                const offset = -95;
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: sectionPosition + offset });
+
+              };
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_4.png" />
               <img
@@ -347,10 +371,16 @@ function Items() {
 
         <section id="fifthSection">
          {showFifth ? (
-            <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
-              fifthClick();
-              document.getElementById("fifthSection").scrollIntoView({ behavior: "smooth" });
-            }}>
+           <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+            fifthClick();
+            const section = document.getElementById("fifthSection");
+            if (section) {
+              const offset = 140;
+              const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+              window.scrollTo({ top: sectionPosition + offset });
+
+            };
+          }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_5.png" />
               <img
                 className="h-60 absolute -top-12 right-[87px] transform -translate-x-1/2"
@@ -394,11 +424,17 @@ function Items() {
           )}
         </section>
 
-        <section id="sexthSection">
+        <section id="sixthSection">
           {showSixth ? (
             <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
               sixthClick();
-              document.getElementById("sexthSection").scrollIntoView({ behavior: "smooth" });
+              const section = document.getElementById("sixthSection");
+              if (section) {
+                const offset = 140;
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: sectionPosition + offset });
+  
+              };
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_6.png" />
               <img
@@ -411,7 +447,18 @@ function Items() {
               <div className="flex items-center justify-center">
                 <span
                   className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                  onClick={() => setShowSixth(true)}
+                 
+                    onClick={() => {
+                      setShowSixth(true);
+                      const section = document.getElementById("sexthSection");
+                      if (section) {
+                        const offset = 140;
+                        const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                        window.scrollTo({ top: sectionPosition + offset });
+          
+                      };
+                    }}
+                  
                 >
                   <MdKeyboardBackspace />
                 </span>
