@@ -26,7 +26,6 @@ function Items() {
     setShowForth(true);
     setShowFifth(true);
     setShowSixth(true);
-    document.getElementById("minha-secao").scrollIntoView({ behavior: "smooth" });
   };
 
   const secondClick = () => {
@@ -156,7 +155,7 @@ function Items() {
                 firstClick();
                 const section = document.getElementById("firstSection");
                 if (section) {
-                  const headerHeight = 495;
+                  const headerHeight = 95;
                   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
                   
                   window.scrollTo({ 
