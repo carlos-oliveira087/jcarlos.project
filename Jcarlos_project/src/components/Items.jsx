@@ -151,15 +151,19 @@ function Items() {
         
           <section id="firstSection">
             {showFirst ? (
-              <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+              <div className="relative mt-16 mx-3 cursor-pointer" 
+              onClick={() => {
                 firstClick();
                 const section = document.getElementById("firstSection");
                 if (section) {
-                  const offset = -1000;
+                  const headerHeight = 495;
                   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                  window.scrollTo({ top: sectionPosition + offset });
-
-                };
+                  
+                  window.scrollTo({ 
+                    top: sectionPosition - headerHeight,
+                    behavior: "smooth" 
+                  });
+                }
               }}>
                 <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_1.png" />
                 <img
@@ -206,15 +210,19 @@ function Items() {
 
         <section id="secondSection">      
           {showSecond ? (
-            <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+            <div className="relative mt-16 mx-3 cursor-pointer" 
+            onClick={() => {
               secondClick();
               const section = document.getElementById("secondSection");
               if (section) {
-                const offset = -100;
+                const headerHeight = -140;
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: sectionPosition + offset });
-
-              };
+            
+                window.scrollTo({ 
+                  top: sectionPosition - headerHeight,
+                  behavior: "smooth" 
+                });
+              }
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_2.png" />
               <img
@@ -261,15 +269,19 @@ function Items() {
 
         <section id="thirdSection">
           {showThird ? (
-            <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+            <div className="relative mt-16 mx-3 cursor-pointer" 
+            onClick={() => {
               thirdClick();
               const section = document.getElementById("thirdSection");
               if (section) {
-                const offset = 100;
+                const headerHeight = -140;
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: sectionPosition + offset });
-
-              };
+            
+                window.scrollTo({ 
+                  top: sectionPosition - headerHeight,
+                  behavior: "smooth" 
+                });
+              }
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_3.png" />
               <img
@@ -316,15 +328,19 @@ function Items() {
 
         <section id="forthSection">
           {showForth ? (
-            <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+            <div className="relative mt-16 mx-3 cursor-pointer" 
+            onClick={() => {
               forthClick();
               const section = document.getElementById("forthSection");
               if (section) {
-                const offset = -95;
+                const headerHeight = 95;
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: sectionPosition + offset });
-
-              };
+                
+                window.scrollTo({ 
+                  top: sectionPosition - headerHeight,
+                  behavior: "smooth" 
+                });
+              }
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_4.png" />
               <img
@@ -371,15 +387,19 @@ function Items() {
 
         <section id="fifthSection">
          {showFifth ? (
-           <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+           <div className="relative mt-16 mx-3 cursor-pointer" 
+           onClick={() => {
             fifthClick();
             const section = document.getElementById("fifthSection");
             if (section) {
-              const offset = 140;
+              const headerHeight = -140;
               const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-              window.scrollTo({ top: sectionPosition + offset });
-
-            };
+          
+              window.scrollTo({ 
+                top: sectionPosition - headerHeight,
+                behavior: "smooth" 
+              });
+            }
           }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_5.png" />
               <img
@@ -426,15 +446,19 @@ function Items() {
 
         <section id="sixthSection">
           {showSixth ? (
-            <div className="relative mt-16 mx-3 cursor-pointer" onClick={() => {
+            <div className="relative mt-16 mx-3 cursor-pointer" 
+            onClick={() => {
               sixthClick();
               const section = document.getElementById("sixthSection");
               if (section) {
-                const offset = 140;
+                const headerHeight = -140;
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({ top: sectionPosition + offset });
-  
-              };
+            
+                window.scrollTo({ 
+                  top: sectionPosition - headerHeight,
+                  behavior: "smooth" 
+                });
+              }
             }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_6.png" />
               <img
