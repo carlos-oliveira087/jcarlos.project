@@ -175,7 +175,11 @@ function Items() {
                 <div className="flex items-center justify-center">
                   <span
                     className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                    onClick={() => setShowFirst(true)}
+                    onClick={() => {
+                      setShowFirst(true);
+                      window.scrollTo({top, behavior: 'smooth'})
+                    
+                    }}
                   >
                     <MdKeyboardBackspace />
                   </span>
@@ -214,7 +218,14 @@ function Items() {
               secondClick();
               const section = document.getElementById("secondSection");
               if (section) {
-                const headerHeight = -140;
+                let headerHeight;
+
+                if (window.innerWidth <= 768) {
+                  headerHeight = 95;
+                } else {
+                  headerHeight = -140;
+                }
+
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
             
                 window.scrollTo({ 
@@ -234,7 +245,10 @@ function Items() {
               <div className="flex items-center justify-center">
                 <span
                   className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                  onClick={() => setShowSecond(true)}
+                  onClick={() => {
+                    setShowSecond(true);
+                    window.scrollTo({top, behavior: 'smooth'})
+                  }}
                 >
                   <MdKeyboardBackspace />
                 </span>
@@ -273,7 +287,14 @@ function Items() {
               thirdClick();
               const section = document.getElementById("thirdSection");
               if (section) {
-                const headerHeight = -140;
+                let headerHeight;
+
+                if (window.innerWidth <= 768) {
+                  headerHeight = 95;
+                } else {
+                  headerHeight = -140;
+                }
+
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
             
                 window.scrollTo({ 
@@ -293,7 +314,10 @@ function Items() {
               <div className="flex items-center justify-center">
                 <span
                   className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                  onClick={() => setShowThird(true)}
+                  onClick={() => {
+                    setShowThird(true);
+                    window.scrollTo({top, behavior: 'smooth'})
+                  }}
                 >
                   <MdKeyboardBackspace />
                 </span>
@@ -332,7 +356,7 @@ function Items() {
               forthClick();
               const section = document.getElementById("forthSection");
               if (section) {
-                const headerHeight = 95;
+                const headerHeight = 95;  
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
                 
                 window.scrollTo({ 
@@ -352,7 +376,10 @@ function Items() {
               <div className="flex items-center justify-center">
                 <span
                   className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                  onClick={() => setShowForth(true)}
+                  onClick={() => {
+                    setShowForth(true);
+                    window.scrollTo({top, behavior: 'smooth'})
+                  }}
                 >
                   <MdKeyboardBackspace />
                 </span>
@@ -391,7 +418,14 @@ function Items() {
             fifthClick();
             const section = document.getElementById("fifthSection");
             if (section) {
-              const headerHeight = -140;
+              let headerHeight;
+
+                if (window.innerWidth <= 768) {
+                  headerHeight = 95;
+                } else {
+                  headerHeight = -140;
+                }
+
               const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
           
               window.scrollTo({ 
@@ -411,7 +445,10 @@ function Items() {
               <div className="flex items-center justify-center">
                 <span
                   className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                  onClick={() => setShowFifth(true)}
+                  onClick={() => {
+                    setShowFifth(true);
+                    window.scrollTo({top, behavior: 'smooth'})
+                  }}
                 >
                   <MdKeyboardBackspace />
                 </span>
@@ -450,7 +487,14 @@ function Items() {
               sixthClick();
               const section = document.getElementById("sixthSection");
               if (section) {
-                const headerHeight = -140;
+                let headerHeight;
+
+                if (window.innerWidth <= 768) {
+                  headerHeight = 95;
+                } else {
+                  headerHeight = -140;
+                }
+
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
             
                 window.scrollTo({ 
@@ -469,20 +513,11 @@ function Items() {
             <div className="relative mt-14 w-screen h-auto bg-white pt-7 mb-16 md:pb-10">
               <div className="flex items-center justify-center">
                 <span
-                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14"
-                 
-                    onClick={() => {
-                      setShowSixth(true);
-                      const section = document.getElementById("sexthSection");
-                      if (section) {
-                        const offset = 140;
-                        const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-                        window.scrollTo({ top: sectionPosition + offset });
-          
-                      };
-                    }}
-                  
-                >
+                  className="absolute flex justify-center items-center left-7 text-[26px] rounded-lg h-[28px] w-10 text-white cursor-pointer bg-secondary md:left-14" 
+                  onClick={() => {
+                    setShowSixth(true);
+                    window.scrollTo({top, behavior: 'smooth'})
+                  }}>
                   <MdKeyboardBackspace />
                 </span>
                 <span className="mx-auto font-arimo font-bold text-secondary text-2xl">
