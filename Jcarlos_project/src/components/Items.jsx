@@ -154,7 +154,6 @@ function Items() {
               onClick={() => {
                 firstClick();
                 const section = document.getElementById("firstSection");
-                
                 if (section) {
                   const headerHeight = 95;
                   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
@@ -212,6 +211,8 @@ function Items() {
             )}
         </section>
 
+
+
         <section id="secondSection">      
           {showSecond ? (
             <div className="relative mt-16 mx-3 cursor-pointer" 
@@ -220,11 +221,23 @@ function Items() {
               const section = document.getElementById("secondSection");
               if (section) {
                 let headerHeight;
+                const isMobile = window.innerWidth <= 768;
 
-                if (window.innerWidth <= 768) {
+                if (!showFirst) {
+                  if (isMobile) {
+                    headerHeight = 1122;
+                  } else {
+                    headerHeight = 1190;
+                  }
+                }
+  
+                else {
+                  if (isMobile) {
                   headerHeight = 95;
-                } else {
-                  headerHeight = -140;
+                  } 
+                  else {
+                    headerHeight = -140;
+                  }
                 }
 
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
@@ -281,6 +294,8 @@ function Items() {
           )}
         </section>
 
+
+
         <section id="thirdSection">
           {showThird ? (
             <div className="relative mt-16 mx-3 cursor-pointer" 
@@ -289,11 +304,30 @@ function Items() {
               const section = document.getElementById("thirdSection");
               if (section) {
                 let headerHeight;
+                const isMobile = window.innerWidth <= 768;
 
-                if (window.innerWidth <= 768) {
+                if (!showSecond) {
+                  if (isMobile) {
+                    headerHeight = 855;
+                  } else {
+                    headerHeight = 1050;
+                  }
+                } 
+                else if (!showFirst) {
+                  if (isMobile) {
+                    headerHeight = 1122;
+                  } else {
+                    headerHeight = 1190;
+                  }
+                }
+  
+                else {
+                  if (isMobile) {
                   headerHeight = 95;
-                } else {
-                  headerHeight = -140;
+                  } 
+                  else {
+                    headerHeight = -140;
+                  }
                 }
 
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
@@ -350,6 +384,8 @@ function Items() {
           )}
         </section>
 
+
+
         <section id="forthSection">
           {showForth ? (
             <div className="relative mt-16 mx-3 cursor-pointer" 
@@ -358,12 +394,32 @@ function Items() {
               const section = document.getElementById("forthSection");
               if (section) {
                 let headerHeight;
+                const isMobile = window.innerWidth <= 768;
 
-                if (window.innerWidth <= 768) {
+                if (!showSecond || !showThird) {
+                  if (isMobile) {
+                    headerHeight = 855;
+                  } else {
+                    headerHeight = 1050;
+                  }
+                } 
+                else if (!showFirst) {
+                  if (isMobile) {
+                    headerHeight = 1122;
+                  } else {
+                    headerHeight = 1190;
+                  }
+                }
+  
+                else {
+                  if (isMobile) {
                   headerHeight = 95;
-                } else {
-                  headerHeight = -140;
-                }  
+                  } 
+                  else {
+                    headerHeight = 95;
+                  }
+                }
+ 
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
                 
                 window.scrollTo({ 
@@ -418,6 +474,8 @@ function Items() {
           )}
         </section>
 
+
+
         <section id="fifthSection">
          {showFifth ? (
            <div className="relative mt-16 mx-3 cursor-pointer" 
@@ -426,20 +484,47 @@ function Items() {
             const section = document.getElementById("fifthSection");
             if (section) {
               let headerHeight;
-
-                if (window.innerWidth <= 768) {
-                  headerHeight = 95;
+              const isMobile = window.innerWidth <= 768;
+            
+              if (!showForth) {
+                if (isMobile) {
+                  headerHeight = 1345;
                 } else {
+                  headerHeight = 1520;
+                }
+              } 
+              else if (!showSecond || !showThird) {
+                if (isMobile) {
+                  headerHeight = 855;
+                } else {
+                  headerHeight = 815;
+                }
+              } 
+              else if (!showFirst) {
+                if (isMobile) {
+                  headerHeight = 1122;
+                } else {
+                  headerHeight = 1190;
+                }
+              }
+
+              else {
+                if (isMobile) {
+                headerHeight = 95;
+                } 
+                else {
                   headerHeight = -140;
                 }
-
+              }
+            
               const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-          
-              window.scrollTo({ 
+            
+              window.scrollTo({
                 top: sectionPosition - headerHeight,
-                behavior: "smooth" 
+                behavior: "smooth",
               });
             }
+            
           }}>
               <img className="h-40 mx-auto rounded-3xl" src="./assets/bg_5.png" />
               <img
@@ -495,13 +580,53 @@ function Items() {
               const section = document.getElementById("sixthSection");
               if (section) {
                 let headerHeight;
+                const isMobile = window.innerWidth <= 768;
 
-                if (window.innerWidth <= 768) {
-                  headerHeight = 95;
-                } else {
-                  headerHeight = -140;
+                if (!showForth) {
+                  if (isMobile) {
+                    headerHeight = 1345;
+                  } else {
+                    headerHeight = 1523;
+                  }
+                } 
+                else if (!showFifth) {
+                  if (isMobile) {
+                    headerHeight = 1345;
+                  } else {
+                    headerHeight = 1758;
+                  }
+                } 
+                else if (!showSecond) {
+                  if (isMobile) {
+                    headerHeight = 855;
+                  } else {
+                    headerHeight = 1050;
+                  }
+                } 
+                else if (!showThird) {
+                  if (isMobile) {
+                    headerHeight = 855;
+                  } else {
+                    headerHeight = 815;
+                  }
+                } 
+                else if (!showFirst) {
+                  if (isMobile) {
+                    headerHeight = 1122;
+                  } else {
+                    headerHeight = 1190;
+                  }
                 }
-
+  
+                else {
+                  if (isMobile) {
+                  headerHeight = 95;
+                  } 
+                  else {
+                    headerHeight = -140;
+                  }
+                }
+                
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
             
                 window.scrollTo({ 
