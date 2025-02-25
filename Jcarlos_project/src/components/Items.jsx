@@ -154,6 +154,7 @@ function Items() {
               onClick={() => {
                 firstClick();
                 const section = document.getElementById("firstSection");
+                
                 if (section) {
                   const headerHeight = 95;
                   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
@@ -356,7 +357,13 @@ function Items() {
               forthClick();
               const section = document.getElementById("forthSection");
               if (section) {
-                const headerHeight = 95;  
+                let headerHeight;
+
+                if (window.innerWidth <= 768) {
+                  headerHeight = 95;
+                } else {
+                  headerHeight = -140;
+                }  
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
                 
                 window.scrollTo({ 
